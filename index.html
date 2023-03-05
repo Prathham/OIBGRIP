@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Pratham Angaitkar Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='depositphotos.jpg'/>
+        <div class='herosectionDetails'>
+          <h1>Pratham Angaitkar</h1>
+          <h3>Frontend Developer</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus convallis ex id mattis. Aenean tellus massa, commodo vel mi vitae, tincidunt feugiat lectus. In dictum ac urna varius placerat. Nunc bibendum eros sed ex iaculis, id semper mi dignissim. Suspendisse vitae egestas orci. Suspendisse sed libero finibus, varius dolor ac, maximus justo. Vestibulum diam purus, porta at diam vel, vehicula ornare ipsum. Nulla consectetur lobortis convallis. Donec convallis dui ut orci pellentesque sodales. Pellentesque euismod a quam sit amet ultrices. Mauris vel enim faucibus, accumsan urna et, ultrices magna. Donec id libero sapien. Praesent faucibus risus ac elit sollicitudin condimentum. Fusce odio enim, volutpat mollis facilisis ac, finibus maximus augue. Morbi nec semper quam.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='html.svg'>
+          <img title='CSS' src='css.svg'>
+          <img title='Javascript' src='js.svg'>
+          <img title='Node.JS' src='nodejs.svg'>
+          <img title='React' src='react.svg'>
+          <img title='MongoDB' src='mongodb.svg'>
+          <img title='Firebase' src='firebase.svg'>
+          <img title='Redux' src='redux.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='css.svg'/>
+ s           <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project.Some details of the project.Some details of the project.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='css.svg'/>
+            <div class='projectDescription'>
+              <h4>Project Name</h4>
+              <p>Some details of the project</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
